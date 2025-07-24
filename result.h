@@ -1,6 +1,6 @@
-#ifndef _LJW_ERROR_H_
+#ifndef _LJW_CHDRS_RESULT_H_
 
-#define _LJW_ERROR_H_
+#define _LJW_CHDRS_RESULT_H_
 
 #include <stdbool.h>
 #include <stdint.h>
