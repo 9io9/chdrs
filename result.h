@@ -13,6 +13,7 @@ typedef struct {
 }Error;
 
 #define ERROR(msg, ec) (Error) {.ec = ec, .message = msg, .line = __LINE__, .file = __FILE__, .function = __func__}
+#define ECODE(domain, module, error) domain ## module ## error
 
 typedef struct {
     bool has_value;
