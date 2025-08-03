@@ -12,7 +12,7 @@ typedef struct {
     const char* function;
 }Error;
 
-#define ERROR(msg, ec) (Error) {.ec = ec, .message = msg, .line = __LINE__, .file = __FILE__, .function = __func__}
+#define ERROR(msg, ecode) (Error) {.ec = ecode, .message = msg, .line = __LINE__, .file = __FILE__, .function = __func__}
 #define ECODE(domain, module, error) domain ## module ## error
 
 typedef struct {
